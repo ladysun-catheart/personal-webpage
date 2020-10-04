@@ -1,33 +1,21 @@
 import React from "react";
 import SocialNetworks from "../social-networks";
+import Menu from "../menu";
+import styles from "./header.module.scss";
 
 const Header: React.FC = () => {
   return (
-    <header>
-      <nav>
-        <ul>
-          <li>
-            <a>About</a>
-          </li>
-          <li>
-            <a>Tech</a>
-          </li>
-          <li>
-            <a>Exp</a>
-          </li>
-          <li>
-            <a>Works</a>
-          </li>
-          <li>
-            <a>Contact</a>
-          </li>
-        </ul>
+    <header className={styles.cont}>
+      <nav className={styles.nav}>
+        <Menu />
       </nav>
-      <hgroup>
-        <h1>Lady Sun</h1>
-        <h2>Front-End Developer</h2>
+      <hgroup className={styles.conTitle}>
+        <h1 className={styles.title}>Lady Sun</h1>
+        <h2 className={styles.subtitle}>Front-End Developer</h2>
       </hgroup>
-      <SocialNetworks />
+      <div className={styles.socialNetworks}>
+        <SocialNetworks />
+      </div>
     </header>
   );
 };
