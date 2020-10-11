@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.scss";
 import { Header, Footer } from "./components";
-import { About, Tech, Experience } from "./sections";
+import { About, Tech, Experience, Works, Contact } from "./sections";
 
 const App: React.FC = () => {
   return (
@@ -11,6 +11,8 @@ const App: React.FC = () => {
         <About />
         <Tech />
         <Experience />
+        <Works />
+        <Contact />
       </main>
       <Footer />
     </div>
