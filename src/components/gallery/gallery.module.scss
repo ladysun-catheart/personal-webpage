@@ -1,0 +1,52 @@
+.cont {
+  display: flex;
+  flex-direction: column;
+  .slideList {
+    min-width: 100%;
+    margin: auto;
+    .scroll {
+      list-style-type: none;
+      overflow-x: hidden;
+      display: flex;
+      scroll-snap-type: x mandatory;
+      .slide {
+        scroll-snap-align: center;
+        list-style-type: none;
+        display: block;
+        min-width: 100%;
+        min-height: 200px;
+        .content {
+          display: flex;
+          flex-direction: row;
+          justify-content: end;
+          min-height: 100%;
+          .text {
+            max-width: 60%;
+            display: flex;
+            flex-direction: column;
+            background-color: plum;
+          }
+        }
+      }
+    }
+  }
+  .controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .left {
+      text-align: left;
+    }
+    .pages {
+      flex: 3;
+    }
+    .right {
+      text-align: right;
+    }
+    .arrow {
+      flex: 1;
+      background-color: aquamarine;
+      cursor: pointer;
+    }
+  }
+}
