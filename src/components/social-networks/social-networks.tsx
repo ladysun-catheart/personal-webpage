@@ -1,9 +1,38 @@
 import React from "react";
 import styles from "./social-networks.module.scss";
-import socialNetworksInfo from "../../config/social-networks";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faTwitter,
+  faLinkedin,
+  faFacebook,
+} from "@fortawesome/free-brands-svg-icons";
 
-const SocialNetworksItem: React.FC<{ label: string }> = ({ label }) => {
-  return <a>{label}</a>;
+export type SocialNetworkConfig = {
+  key: string;
+  label: string;
+  icon: React.ReactElement;
+};
+
+const socialNetworksInfo: SocialNetworkConfig[] = [
+  {
+    key: "linkedin",
+    label: "LinkedIn",
+    icon: <FontAwesomeIcon icon={faLinkedin} />,
+  },
+  {
+    key: "twitter",
+    label: "Twitter",
+    icon: <FontAwesomeIcon icon={faTwitter} />,
+  },
+  {
+    key: "facebook",
+    label: "Facebook",
+    icon: <FontAwesomeIcon icon={faFacebook} />,
+  },
+];
+
+const SocialNetworksItem: React.FC<{ label: string, icon: React.ReactElement }> = ({ label, icon }) => {
+  return <a className={styles.icon} title={label}>{icon}</a>;
 };
 
 const SocialNetworks: React.FC = ({ children }) => {
