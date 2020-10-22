@@ -1,6 +1,7 @@
 @import '../../scss/color.scss';
 
 .cont {
+  height: 27em;
   display: flex;
   flex-direction: column;
   background-color: $base-color;
@@ -22,15 +23,16 @@
       font-weight: normal;
       color: white;
       text-shadow: 0px 15px 10px $base-color-dark;
-      height: 200px;
+      height: 8em;
       .firstLetter {
-        font-size: 8em;
+        font-size: 6em;
       }
       .restWord {
-        font-size: 5em;
+        font-size: 4em;
       }
     }
     .subtitle {
+      margin-bottom: 1em;
       text-align: center;
       font-family: 'Revalia Regular';
       color: white;
