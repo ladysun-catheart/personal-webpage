@@ -1,12 +1,13 @@
 import React from "react";
+import style from './box.module.scss'
 
 const Box: React.FC<{ title: string }> = ({ title, children }) => {
   return (
-    <div>
+    <div className={style.cont}>
       <header>
-        <h2>{title}</h2>
+        <h2 className={style.title}>{title}</h2>
       </header>
-      <div>{children}</div>
+      <div className={style.body}>{children}</div>
     </div>
   );
 };

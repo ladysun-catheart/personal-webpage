@@ -1,0 +1,17 @@
+@import '../../scss/color.scss';
+
+.cont {
+    margin-bottom: 3em;
+    border-bottom: 2px solid $gray-light;
+    // max-width: 76em;
+    .title {
+        font-family: 'Revalia Regular';
+        font-weight: normal;
+        color: $base-color;
+        margin-bottom: 1.5em;
+    }
+    .body{ 
+        margin-bottom: 1em;
+        text-align: justify;
+    }
+}
