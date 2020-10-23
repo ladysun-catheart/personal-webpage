@@ -1,0 +1,29 @@
+@import "../../scss/color.scss";
+
+.cont {
+  display: flex;
+  margin-bottom: 3em;
+  .info {
+    display: flex;
+    flex-direction: column;
+    // border-left: 2px solid $base-color;
+    // padding-left: 1em;
+    width: 22em;
+    .years {
+      color: $base-color;
+      height: 1.75em;
+    }
+    .place {
+      font-weight: bold;
+      height: 1.75em;
+    }
+    .position {
+      height: 1.75em;
+    }
+  }
+  .description {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  }
+}
