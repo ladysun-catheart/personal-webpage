@@ -4,9 +4,10 @@ import style from './contact.module.scss'
 const Form = () => {
     return (
         <form className={style.form}>
-            <input type="text" placeholder="nombre"/>
-            <input type="mail" placeholder="ejemplo@MediaList.com"/>
-            <textarea>¿Qué quieres contarme?</textarea>
+            <input className={style.name} type="text" placeholder="nombre"/>
+            <input className={style.mail} type="mail" placeholder="ejemplo@MediaList.com"/>
+            <textarea rows={8} className={style.description}>¿Qué quieres contarme?</textarea>
+            <button type="submit">Enviar</button>
         </form>
     )
 }
